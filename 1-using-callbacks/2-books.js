@@ -9,7 +9,7 @@ const fs = require('node:fs');
 
 console.log('Reading the booksHuge.csv file');
 
-fs.readFile('../data/booksHuge.csv', 'utf-8', (err, data) => {
+fs.readFile('./data/booksHuge.csv', 'utf-8', (err, data) => {
   // this code is scheduled to run when the file is done being processed
   if (err) {
     console.error(err);

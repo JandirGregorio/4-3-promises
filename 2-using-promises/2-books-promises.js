@@ -13,7 +13,7 @@ HINTs:
 - Each .then returns a promise allowing for chaining!
 */
 console.log("Reading the booksHuge.csv file");
-fs.readFile('../data/booksHuge.csv', 'utf-8', (err, data) => {
+fs.readFile('./data/booksHuge.csv', 'utf-8', (err, data) => {
   if (err) {
     console.error(err);
   } else {

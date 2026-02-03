@@ -11,3 +11,5 @@ const end = () => console.log('end');
 start();
 longTask();
 end();
+// this will not run until previous tasks are done running
+console.log('important task that needs to run asap!');

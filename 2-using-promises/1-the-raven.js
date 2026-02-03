@@ -6,7 +6,8 @@ const fs = require('node:fs/promises');
 console.log("Reading the-raven.txt");
 
 // A Promise object is returned
-const promise = fs.readFile('../data/the-raven.txt', 'utf8');
+// sync       |      async
+const promise = fs.readFile('./data/the-raven.txt', 'utf8');
 
 // The .then and .catch methods schedule resolve/reject handlers
 promise
@@ -15,6 +16,7 @@ promise
     console.log(`Done reading the-raven.txt.`)
     console.log(`There were ${ravenCount} mentions of "Raven".`);
   })
+
   .catch((err) => {
     console.log('Something went wrong!');
     console.error(err);
